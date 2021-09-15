@@ -1,0 +1,67 @@
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+  <script>
+    // Parte I
+    // 1 Acesse o elemento elementoOndeVoceEsta .
+    const elementoOndeVocêEsta = document.getElementById("elementoOndeVoceEsta");
+
+    // 2 Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+    const pai = elementoOndeVocêEsta.parentElement
+    pai.style.color = "green"; 
+
+    // 3 Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+    const primeiroFilho = document.getElementById("primeiroFilhoDoFilho")
+    primeiroFilho.innerText = "Primeiro filho do filho."
+
+
+    // 4 Acesse o primeiroFilho a partir de pai .
+    const primeiroFiho = pai.firstElementChild;
+
+    // 5 Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
+    primeiroFilho2 = elementoOndeVocêEsta.previousElementSibling;
+
+    // 6 Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+    const textElement = elementoOndeVoceEsta.nextSibling;
+
+    // 7 Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+    const terceiroFilho = elementoOndeVocêEsta.nextElementSibling 
+    
+    // 8 Agora acesse o terceiroFilho a partir de pai .
+    const terceiroFilho2 = pai.lastElementChild .previousElementSibling 
+  
+    // Parte II
+
+    // 1 Crie um irmão para elementoOndeVoceEsta 
+    const irmaoElementoOndeVoceEsta = document.createElement('section');
+    irmaoElementoOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta';
+    pai.appendChild(irmaoElementoOndeVoceEsta);
+
+    // 2 Crie um filho para elementoOndeVoceEsta .
+    const filhoElementoOndeVoceEsta = document.createElement('section');
+    filhoElementoOndeVoceEsta.id = 'filhoElementoOndeVoceEsta';
+    elementoOndeVocêEsta.appendChild(filhoElementoOndeVoceEsta);
+
+    // 3 Crie um filho para primeiroFilhoDoFilho .
+    const filhoDoPrimeiroFilhoDoFilho = document.createElement('section');
+    filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
+    primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
+
+    // 4 A partir desse filho criado, acesse terceiroFilho.
+    const terceiroFilho3 = filhoPrimeiroFilhoDoFilho
+      .parentElement // primeiroFilhoDoFilho
+      .parentElement // elementoOndeVoceEsta
+      .nextElementSibling; // terceiroFilho
+    console.log(terceiroFilho);
+
+
+  </script>
+</main>
