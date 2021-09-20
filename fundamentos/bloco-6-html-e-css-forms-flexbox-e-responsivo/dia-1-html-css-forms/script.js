@@ -2,10 +2,11 @@ const statesList = ['', 'AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'Go', 'M
 
 const getStates = document.getElementById('estados');
 
-function addOptions () {
-  statesList.forEach((state) => {
-    option = new Option(state, state.toLowerCase());
-    getStates.options[getStates.options.length] = option;
-  });
+// Função que cria as opções de estados
+
+for (let index = 0; index < statesList.length; index += 1) {
+  let createOptions = document.createElement('option');
+  states.appendChild(createOptions).innerText = statesList[index];
+  states.appendChild(createOptions).value = statesList[index];
 }
-addOptions()
+
