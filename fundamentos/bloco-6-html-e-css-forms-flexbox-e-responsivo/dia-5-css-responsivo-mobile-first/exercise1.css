@@ -1,0 +1,49 @@
+body {
+  font-size: 18px;
+  margin: 4%;
+}
+
+h1 {
+font-size: 25px;
+}
+
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 798px){
+  body {
+    background: rgb(243, 243, 175);
+    font-size: 15px;
+    margin: 4% 5%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  main h2 {
+    flex-basis: 100%;
+  }
+
+  figure {
+    flex-basis: 40%;
+  
+  }
+}
