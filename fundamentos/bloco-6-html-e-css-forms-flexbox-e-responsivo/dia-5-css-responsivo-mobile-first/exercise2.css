@@ -16,4 +16,41 @@ html {
     font-size: 1.8em;
   }
 }
+/* medium */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  body {
+    background-color: rgb(179, 223, 201);
+    font: 1.4em Helvetica, aria, sans-serif;
+    margin: 25px 6%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+
+  }
+  nav ul li {
+    list-style-type: none;
+    padding: 10px 20px 10px 0 ;
+    margin-right: 10px;
+  }
+
+  .asides {
+    display: flex;
+  }
+
+  .aside-one {
+    width: 50%;
+  }
+
+  .aside-two {
+    width: 50%;
+  }
+}
+
+
 
