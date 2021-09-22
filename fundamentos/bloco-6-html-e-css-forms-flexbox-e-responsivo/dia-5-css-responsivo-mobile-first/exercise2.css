@@ -21,7 +21,7 @@ h1 {
   }
 }
 /* medium */
-@media screen and (min-width: 769px) and (max-width: 1024px){
+@media screen and (min-width: 769px) and (max-width: 1200px){
   body {
     background-color: rgb(179, 223, 201);
     margin: 25px 6%;
@@ -53,7 +53,7 @@ h1 {
 }
 
 /* large */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1200px) {
   body {
     background-color: rgb(179, 193, 223);
     margin: 15px 6%;
@@ -69,17 +69,17 @@ h1 {
   }
 
   .asides {
-    flex-basis: 20%;
+    flex-basis: 18%;
   }
 
   .main-content {
     flex-basis: 60%;
-    margin-left: 10px;
+    margin-left: 2%;
   }
 
   footer{
     flex-basis: 18%;
-    margin-left: 10px;
+    margin-left: 2%;
   }
 
   nav ul {
