@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* small */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: thistle;
+    font: 1.2em Helvetica, aria, sans-serif;
+    margin: 0 3%;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
