@@ -35,7 +35,7 @@ figure {
   main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   main h2 {
@@ -44,6 +44,25 @@ figure {
 
   figure {
     flex-basis: 40%;
-  
+    padding: 8px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background: rgb(146, 197, 209);
+    font-size: 25px;
+    margin: 30px 10%;
+    max-width: 1150px
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  figure {
+    flex-basis: 30%;
+    padding: 15px;
   }
 }
