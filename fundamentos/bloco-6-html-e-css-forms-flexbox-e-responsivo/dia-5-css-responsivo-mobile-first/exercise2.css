@@ -5,34 +5,34 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font: 1.2em Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
 /* small */
 @media screen and (max-width: 768px) {
   body {
     background-color: thistle;
-    font: 1.2em Helvetica, aria, sans-serif;
     margin: 0 3%;
-  }
-  h1 {
-    font-size: 1.8em;
   }
 }
 /* medium */
 @media screen and (min-width: 769px) and (max-width: 1024px){
   body {
     background-color: rgb(179, 223, 201);
-    font: 1.4em Helvetica, aria, sans-serif;
     margin: 25px 6%;
-  }
-  h1 {
-    font-size: 2em;
   }
 
   nav ul {
     display: flex;
     justify-content: flex-start;
     padding: 0;
-
   }
+
   nav ul li {
     list-style-type: none;
     padding: 10px 20px 10px 0 ;
@@ -52,5 +52,46 @@ html {
   }
 }
 
+/* large */
+@media screen and (min-width: 1025px) {
+  body {
+    background-color: rgb(179, 193, 223);
+    margin: 15px 6%;
+  }
 
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header {
+    flex-basis: 100%;
+  }
+
+  .asides {
+    flex-basis: 20%;
+  }
+
+  .main-content {
+    flex-basis: 60%;
+    margin-left: 10px;
+  }
+
+  footer{
+    flex-basis: 18%;
+    margin-left: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    padding: 10px 20px 10px 0 ;
+    margin-right: 10px;
+  }
+}
 
