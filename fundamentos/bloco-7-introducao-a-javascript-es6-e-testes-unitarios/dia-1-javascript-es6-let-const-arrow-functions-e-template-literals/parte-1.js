@@ -1,7 +1,4 @@
-// Faça as modificações necessárias na função para que o seu comportamento respeite o escopo no qual cada variável foi declarada.
-
-// Modifique a estrutura da função para que ela seja uma arrow function .
-// Modifique as concatenações para template literals . 
+// Exercício 1
 
 const testingScope = (escopo) => {
   if (escopo === true) {
@@ -15,3 +12,11 @@ const testingScope = (escopo) => {
 }
 
 testingScope(true);
+
+// Exercício 2
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+const sortOddsAndEvens = oddsAndEvens.sort((a, b) => a - b);
+
+console.log(`Os números ${sortOddsAndEvens} se encontram ordenados de forma crescente!`); 
