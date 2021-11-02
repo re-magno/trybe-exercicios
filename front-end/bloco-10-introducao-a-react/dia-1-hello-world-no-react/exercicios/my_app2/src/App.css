@@ -1,0 +1,43 @@
+* {
+  background-color: rgb (242, 233, 228);
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  background: rgb(34, 34, 59);
+  color: white;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  align-items: center;
+  background: rgb(201, 173, 167);
+  border-radius: 8px;
+  flex: 1 1 150px;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.footer {
+  align-items: center;
+  background: rgb(74, 78, 105);
+  bottom: 0;
+  color: white;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
