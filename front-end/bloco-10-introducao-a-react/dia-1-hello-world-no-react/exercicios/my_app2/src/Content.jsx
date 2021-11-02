@@ -25,15 +25,15 @@ export default class Content extends Component {
       },
     ];
     return (
-      <section>
+      <section className="content">
         {conteudos.map(({ conteudo, bloco, status})=> (
-          <div key={conteudo}>
+          <div key={conteudo} className="card">
             <h4>{`O conteudo é: ${conteudo}`}</h4>
             <p>{`status: ${status}`}</p>
             <p>{`bloco: ${bloco}`}</p>
           </div>
         ))}
-      </section>
+      </section>  
     );
   }
 }
