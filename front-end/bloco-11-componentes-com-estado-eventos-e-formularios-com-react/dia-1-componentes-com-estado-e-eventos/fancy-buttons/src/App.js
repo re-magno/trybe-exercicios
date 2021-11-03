@@ -3,9 +3,14 @@ import React from 'react';
 class App extends React.Component {
   constructor() {
     super()
-    this.handleClick1 = this.handleClick1.bind(this)
-    this.handleClick2 = this.handleClick2.bind(this)
-    this.handleClick3 = this.handleClick3.bind(this)
+    this.handleClick1 = this.handleClick1.bind(this);
+    this.handleClick2 = this.handleClick2.bind(this);
+    this.handleClick3 = this.handleClick3.bind(this);
+    this.state = {
+      btn1: 0,
+      btn2: 0,
+      btn3: 0,
+    };
   }
 
   handleClick1() {
