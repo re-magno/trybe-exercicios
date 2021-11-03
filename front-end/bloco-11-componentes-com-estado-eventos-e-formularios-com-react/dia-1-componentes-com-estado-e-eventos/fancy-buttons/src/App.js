@@ -6,6 +6,7 @@ class App extends React.Component {
     this.handleClick1 = this.handleClick1.bind(this);
     this.handleClick2 = this.handleClick2.bind(this);
     this.handleClick3 = this.handleClick3.bind(this);
+    this.changeColor = this.changeColor.bind(this);
     this.state = {
       btn1: 0,
       btn2: 0,
@@ -26,12 +27,36 @@ class App extends React.Component {
     this.setState((e, _props) => ({btn3: e.btn3 + 1}))
   }
 
+  changeColor (num) {
+    return num % 2 === 0 ? 'green' : 'white';
+  }
+
   render() {
+    const { btn1, btn2, btn3 } = this.state;
     return (
     <>
-      <button onClick={ this.handleClick1 }>{this.state.btn1}</button>
-      <button onClick={ this.handleClick2 }>{this.state.btn2}</button>
-      <button onClick={ this.handleClick3 }>{this.state.btn3}</button>
+      <button 
+        onClick={ this.handleClick1 }
+        style={{ backgroundColor: this.changeColor(btn1) }}
+      >
+        {btn1}
+      </button>
+
+      <button 
+        onClick={ this.handleClick2 }
+        style={{ backgroundColor: this.changeColor(btn2) }}
+      >
+        {btn2}
+      </button>
+
+      <button 
+        onClick={ this.handleClick3 }
+        style={{ backgroundColor: this.changeColor(btn3) }}
+      >
+        {btn3}
+      </button>
+
+
     </>
     );
   }
