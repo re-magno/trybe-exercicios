@@ -16,15 +16,21 @@ class App extends React.Component {
   }
 
   handleClick1() {
-    this.setState((e, _props) => ({btn1: e.btn1 + 1}))
+    this.setState((e, _props) => ({btn1: e.btn1 + 1}), () => {
+      console.log(`Botão 1 ${this.changeColor(this.state.btn1)}`);
+    })
   }
   
   handleClick2() {
-    this.setState((e, _props) => ({btn2: e.btn2 + 1}))
+    this.setState((e, _props) => ({btn2: e.btn2 + 1}), () => {
+      console.log(`Botão 2 ${this.changeColor(this.state.btn2)}`);
+    })
   }
   
   handleClick3() {
-    this.setState((e, _props) => ({btn3: e.btn3 + 1}))
+    this.setState((e, _props) => ({btn3: e.btn3 + 1}), () => {
+      console.log(`Botão 3 ${this.changeColor(this.state.btn3)}`);
+    })
   }
 
   changeColor (num) {
