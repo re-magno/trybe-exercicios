@@ -85,13 +85,7 @@ class App extends Component {
               />
           </label>
           <br />
-          <label htmlFor = "file">
-            <input 
-              type="file"
-              name = "file"
-              id = "file"
-            />
-          </label>
+          <input type="file" />
         </form>
       </div>
     );
