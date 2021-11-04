@@ -84,6 +84,14 @@ class App extends Component {
                 onChange = {this.handleChange}
               />
           </label>
+          <br />
+          <label htmlFor = "file">
+            <input 
+              type="file"
+              name = "file"
+              id = "file"
+            />
+          </label>
         </form>
       </div>
     );
