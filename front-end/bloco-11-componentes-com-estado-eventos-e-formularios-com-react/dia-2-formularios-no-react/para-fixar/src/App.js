@@ -29,33 +29,22 @@ class App extends Component {
   render() {
     return(
       <div>
-        <h1>Meu Formulário</h1>
+        <h1>Formulário de inscrição</h1>
         <form className='form'>
-          <label htmlFor= 'participar'>Deseja participar da palestra?
-            <select 
-              name='participar'
-              id = 'participar'
-              value = {this.state.participar}
-              onChange = {this.handleChange} 
-            >
-              <option />
-              <option value= 'nao' >Não</option>
-              <option value= 'sim' >Sim</option>
-            </select>
-          </label>
-          <br />
-          <label htmlFor = "name">Nome:
-            <input
-                type="text"
-                name="name"
-                id = "name"
-                value = {this.state.name}
-                onChange = {this.handleChange}
+          <fieldset>
+            <legend>Informações pessoais</legend>
+            <label htmlFor = "name">Nome:
+              <input
+                  type="text"
+                  name="name"
+                  id = "name"
+                  value = {this.state.name}
+                  onChange = {this.handleChange}
               />
             </label>
             <br />
-          <label htmlFor = "idade">Idade:
-            <input
+            <label htmlFor = "idade">Idade:
+              <input
                 type="text"
                 name="idade"
                 id = "idade"
@@ -63,8 +52,24 @@ class App extends Component {
                 onChange = {this.handleChange}
               />
             </label>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Outras Informações</legend>
+            <label htmlFor= 'participar'>Deseja participar da palestra?
+              <select 
+                name='participar'
+                id = 'participar'
+                value = {this.state.participar}
+                onChange = {this.handleChange} 
+                >
+                <option />
+                <option value= 'nao' >Não</option>
+                <option value= 'sim' >Sim</option>
+              </select>
+            </label>
             <br />
-            <label htmlFor = "email">Receber e-mail
+            <label htmlFor = "email">Receber confirmação por e-mail
               <input
               type="checkbox"
               name="recebe_email"
@@ -72,18 +77,18 @@ class App extends Component {
               value = {this.state.email}
                 onChange = {this.handleChange}
               />
-          </label>
-          <br />
-          <label htmlFor = "comentario">
-            Comentário:
+            </label>
             <br />
+            <label htmlFor = "comentario">Comentário:
+              <br />
               <textarea 
                 name="comentario"
                 id = "comentario"
                 value = {this.state.comentario}
                 onChange = {this.handleChange}
               />
-          </label>
+            </label>
+          </fieldset>
           <br />
           <input type="file" />
         </form>
