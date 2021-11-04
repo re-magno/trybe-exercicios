@@ -4,16 +4,25 @@ import './App.css';
 class App extends Component {
   constructor() {
     super()
+
     this.handleChange = this.handleChange.bind(this);
+
     this.state = {
+      participar: '',
+      name: '',
       idade : '',
+      recebe_email: false,
+      comentario: '',
     }
 
   }
 
-  handleChange(event) {
+  handleChange({ target }) {
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+
     this.setState({
-      idade: event.target.value,
+      [name]: value,
     });
   }
 
@@ -22,40 +31,58 @@ class App extends Component {
       <div>
         <h1>Meu Formulário</h1>
         <form className='form'>
-          <label>Deseja participar da palestra?
-            <select name='participar' >
-              <option value= 'sim' >Sim</option>
+          <label htmlFor= 'participar'>Deseja participar da palestra?
+            <select 
+              name='participar'
+              id = 'participar'
+              value = {this.state.participar}
+              onChange = {this.handleChange} 
+            >
+              <option />
               <option value= 'nao' >Não</option>
+              <option value= 'sim' >Sim</option>
             </select>
           </label>
           <br />
-          <label>Nome:
+          <label htmlFor = "name">Nome:
             <input
                 type="text"
                 name="name"
+                id = "name"
+                value = {this.state.name}
+                onChange = {this.handleChange}
               />
             </label>
             <br />
-          <label>Idade:
+          <label htmlFor = "idade">Idade:
             <input
                 type="text"
                 name="idade"
+                id = "idade"
                 value = {this.state.idade}
                 onChange = {this.handleChange}
               />
             </label>
             <br />
-            <label>Receber e-mail
+            <label htmlFor = "email">Receber e-mail
               <input
               type="checkbox"
-              name="vaiComparecer"
+              name="recebe_email"
+              id = "recebe_email"
+              value = {this.state.email}
+                onChange = {this.handleChange}
               />
           </label>
           <br />
-          <label>
+          <label htmlFor = "comentario">
             Comentário:
             <br />
-              <textarea name="" />
+              <textarea 
+                name="comentario"
+                id = "comentario"
+                value = {this.state.comentario}
+                onChange = {this.handleChange}
+              />
           </label>
         </form>
       </div>
