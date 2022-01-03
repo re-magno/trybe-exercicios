@@ -85,7 +85,7 @@
       document.getElementById('random').addEventListener('click', () => {
         store.dispatch({type: 'RANDOM_COLOR'});
       });
-        
+
       const store = Redux.createStore(reducer);
 
       store.subscribe(() => {
@@ -94,6 +94,12 @@
         document.getElementById('container').style.backgroundColor = colors[index];
       });
 
+      window.onload = () => {
+        setTimeout(() => {
+          //Seu dispatch vem aqui //
+        }, 3000);
+      };
+      
     </script>
   </body>
 </html>

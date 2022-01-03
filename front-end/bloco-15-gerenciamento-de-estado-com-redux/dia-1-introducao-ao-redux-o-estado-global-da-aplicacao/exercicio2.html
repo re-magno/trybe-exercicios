@@ -68,6 +68,21 @@
       });
 
       const store = Redux.createStore(reducerCombinado);
+
+      window.onload = () => {
+        setTimeout(() => {
+          store.dispatch({
+            type: 'ALTERA_PRIMEIRO_NOME_E_SOBRENOME',
+            nome: 'Maria',
+            sobrenome: 'Silva',
+          });
+          store.dispatch({
+            type: 'ALTERA_SEGUNDO_NOME_E_SOBRENOME',
+            nome: 'João',
+            sobrenome: 'Figueiredo',
+          });
+        }, 3000);
+      };
     </script>
   </body>
 </html>
