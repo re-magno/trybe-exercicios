@@ -38,7 +38,7 @@
         index: 0,
       };
 
-      const Redux = require('redux');
+      // const Redux = require('redux');
 
       const reducer = (state = ESTADO_INICIAL, action) => {
         switch (action.type) {
@@ -56,6 +56,14 @@
             return state
         }
       };
+
+      document.getElementById('previous').addEventListener('click', () => {
+        store.dispatch({ type: 'PREVIOUS_COLOR' });
+      });
+
+      document.getElementById('next').addEventListener('click', () => {
+        store.dispatch({type: 'NEXT_COLOR'});
+      });
 
       const store = Redux.createStore(reducer);
 
