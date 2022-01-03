@@ -1,0 +1,21 @@
+# dependencies
+/node_modules
+
+### VisualStudioCode ###
+.vscode / *
+! .vscode / settings.json
+! .vscode / tasks.json
+! .vscode / launch.json
+! .vscode / extensions.json
+* .code-workspace
+
+# História local para código do Visual Studio
+.história/
+
+### VisualStudioCode Patch ###
+# Ignorar todo o histórico local de arquivos
+.história
+.ionida
+
+# Suporte para o escopo do snippet do projeto
+! .vscode / *. snippets de código
