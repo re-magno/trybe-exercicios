@@ -1,3 +1,4 @@
+
 # Trybe
 
 ## Sobre o Repositório:
@@ -86,7 +87,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x]  9-3: _03: Jest - Testes Assíncronos_
 - [x]  9-4: _[04: Projeto - Carrinho de Compras]()_
 
-## Desenvolvimento Front-end ![hourglass_flowing_sand](https://github.githubassets.com/images/icons/emoji/unicode/23f3.png)
+## Desenvolvimento Front-end ![white_check_mark](https://github.githubassets.com/images/icons/emoji/unicode/2705.png)
 
 ##### Bloco 10: Introdução à React
 
