@@ -1,5 +1,5 @@
 -- Exercícios de fixação - SELECT , o primeiro passo.
- 
+
 -- 1. Monte uma query que exiba seu nome na tela;
 SELECT 'renata';
 
