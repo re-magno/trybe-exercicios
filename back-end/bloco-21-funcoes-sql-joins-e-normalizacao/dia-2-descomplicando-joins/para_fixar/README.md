@@ -5,6 +5,8 @@ Esta seção tem como objetivo fixar os aprendizados e os exercícios estão sep
  
 ### `INNER JOIN`
 
+Vamos ver agora alguns desafios para consolidar esse conhecimento sobre o INNER JOIN , utilizando o banco de dados sakila . Antes de começar a escrever suas queries , identifique quais tabelas contêm as informações de que você precisa e como elas estão relacionadas.
+
 1.  Monte uma  _query_ que exiba o  **id do ator** ,  **nome do ator** e  **id do filme** em que ele já atuou usando as tabelas  `actor`  e  `film_actor`  .
     
 2.  Use o  `JOIN`  para exibir o  **nome** ,  **sobrenome** e  **endereço** de cada um dos funcionários do banco. Use as tabelas  `staff`  e  `address`  .
