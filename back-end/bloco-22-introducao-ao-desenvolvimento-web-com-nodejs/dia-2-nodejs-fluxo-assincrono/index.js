@@ -14,17 +14,20 @@ calculate(param1, param2, param3) {
   });
 }
 
+function getRandom() {
+  return Math.floor(Math.random() * 100 + 1)
+}
 
-calculate('num', 10, 5)
-  .then(resolve => console.log(resolve))
-  .catch(error => console.log(error));
-  
+const params = [];
 
-calculate(1, 5, 1)
-  .then(resolve => console.log(resolve))
-  .catch(error => console.log(error));
+function numbers() {
+  for(let i = 0; i <= 3; i++) {
+    params.push(getRandom())
+  }
+}
+numbers();
 
 
-calculate(20, 10, 5)
+calculate(...params)
   .then(resolve => console.log(resolve))
   .catch(error => console.log(error));
