@@ -33,12 +33,24 @@ function callCalculateWhithThen() {
 }
 
 
-calculate();
+callCalculateWhithThen();
 
 // Exercise 3
 
+async function callCalculateWhithAsync() {
+  const params = [];
+
+  for(let i = 0; i <= 3; i++) {
+    params.push(getRandom())
+  }
+
+  try{
+    result = await calculate(...params);
+    console.log(result);
+  }catch(error){
+    console.log(error);
+  }
+}
 
 
-
-
-
+callCalculateWhithAsync();
